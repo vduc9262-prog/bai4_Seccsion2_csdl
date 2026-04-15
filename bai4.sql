@@ -9,7 +9,7 @@ CREATE TABLE USERS (
     Email VARCHAR(100) UNIQUE,
     PasswordHash VARCHAR(255) NOT NULL,
     Status VARCHAR(20) DEFAULT 'Active',
-    CHECK (Status IN ('Active', 'Inactive', 'Locked', 'Suspended')),
+    CHECK ( ('Active', 'Inactive', 'Locked', 'Suspended')),
     CreatedAt DATETIME ,
     UpdatedAt DATETIME ,
     PRIMARY KEY (UserID)
